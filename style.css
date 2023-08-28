@@ -1,0 +1,52 @@
+h1{
+    font-family: monospace;
+    color: coral;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+    
+}
+
+@keyframes noora {
+  0% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+  
+  .animation-noora {
+    animation: noora 3s infinite;
+  }
+
+.container {
+width: 500px;
+display: flex;
+justify-content: center;
+align-items:center ;
+flex-wrap: wrap;
+
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: teal;
+  margin: 1px; ;
+  border-radius: 10px;
+  transition: all 0.5s;
+  border: 2px solid darkkhaki;
+  box-shadow: 2px 3px 10px brown;
+}
+.box:hover {
+background-color: turquoise;
+}
